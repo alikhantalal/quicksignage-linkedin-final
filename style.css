@@ -86,7 +86,7 @@
     transform: translateY(-1px);
 }
 
-/* Navigation - Changed to black */
+/* Navigation - Black navbar */
 .quicksignage-landing .navbar {
     background: #000000 !important;
     backdrop-filter: blur(10px);
@@ -295,7 +295,7 @@
     font-size: 0.7rem;
 }
 
-/* Hero Section - Fixed spacing */
+/* Hero Section - Fixed to remove white space */
 .quicksignage-landing .hero-section {
     background: linear-gradient(135deg, #2d3436 0%, #636e72 100%);
     color: var(--white);
@@ -305,7 +305,8 @@
     display: flex;
     align-items: center;
     padding-top: var(--navbar-height);
-    margin-bottom: 0;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
 }
 
 .quicksignage-landing .hero-overlay {
@@ -478,7 +479,8 @@
 .quicksignage-landing .value-prop-section {
     padding: 5rem 0;
     background: var(--light-color);
-    margin-top: 0;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
 }
 
 .quicksignage-landing .step-card {
@@ -544,6 +546,7 @@
 .quicksignage-landing .sign-types-section {
     padding: 5rem 0;
     background: var(--white);
+    margin: 0 !important;
 }
 
 .quicksignage-landing .sign-type-card {
@@ -632,6 +635,7 @@
 .quicksignage-landing .portfolio-section {
     padding: 5rem 0;
     background: var(--light-color);
+    margin: 0 !important;
 }
 
 .quicksignage-landing .portfolio-grid {
@@ -699,6 +703,7 @@
     position: relative;
     padding: 5rem 0;
     background: var(--light-color);
+    margin: 0 !important;
 }
 
 .quicksignage-landing .testimonial-card {
@@ -797,6 +802,7 @@
 .quicksignage-landing .why-us-section {
     padding: 5rem 0;
     background: var(--white);
+    margin: 0 !important;
 }
 
 .quicksignage-landing .benefit-card {
@@ -848,6 +854,7 @@
     padding: 5rem 0;
     background: var(--gradient);
     color: var(--white);
+    margin: 0 !important;
 }
 
 .quicksignage-landing .cta-title {
@@ -867,6 +874,7 @@
     background: var(--dark-color);
     color: var(--white);
     padding: 3rem 0 1rem;
+    margin: 0 !important;
 }
 
 .quicksignage-landing .footer-text {
@@ -958,14 +966,63 @@
     animation: fadeInUp 0.6s ease-out;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
+/* Enhanced Responsive Design */
+@media (max-width: 1200px) {
     .quicksignage-landing .hero-title {
-        font-size: 2.5rem;
+        font-size: 3rem;
+    }
+    
+    .quicksignage-landing .section-title {
+        font-size: 2.25rem;
+    }
+    
+    .quicksignage-landing .hero-form-card {
+        padding: 1.75rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .quicksignage-landing .hero-title {
+        font-size: 2.75rem;
     }
     
     .quicksignage-landing .section-title {
         font-size: 2rem;
+    }
+    
+    .quicksignage-landing .hero-content {
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+    
+    .quicksignage-landing .hero-form-card {
+        padding: 1.5rem;
+        margin-top: 2rem;
+    }
+    
+    .quicksignage-landing .step-card,
+    .quicksignage-landing .benefit-card {
+        margin-bottom: 2rem;
+    }
+    
+    .quicksignage-landing .sign-image {
+        height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .quicksignage-landing .hero-title {
+        font-size: 2.25rem;
+        line-height: 1.3;
+    }
+    
+    .quicksignage-landing .section-title {
+        font-size: 1.75rem;
+        line-height: 1.3;
+    }
+    
+    .quicksignage-landing .hero-subtitle {
+        font-size: 1.1rem;
     }
     
     .quicksignage-landing .hero-cta .btn {
@@ -975,6 +1032,7 @@
     
     .quicksignage-landing .portfolio-grid {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
     }
     
     .quicksignage-landing .hero-content {
@@ -983,7 +1041,7 @@
     }
     
     .quicksignage-landing .hero-form-card {
-        padding: 1.5rem;
+        padding: 1.25rem;
     }
     
     .quicksignage-landing .form-header h3 {
@@ -1026,11 +1084,46 @@
         align-items: flex-start;
         gap: 0.3rem;
     }
+    
+    .quicksignage-landing .sign-image {
+        height: 180px;
+    }
+    
+    .quicksignage-landing .step-icon,
+    .quicksignage-landing .benefit-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+    
+    .quicksignage-landing .step-number {
+        width: 35px;
+        height: 35px;
+        font-size: 1.1rem;
+    }
+    
+    .quicksignage-landing .cta-title {
+        font-size: 2rem;
+    }
+    
+    .quicksignage-landing .cta-subtitle {
+        font-size: 1.1rem;
+    }
 }
 
 @media (max-width: 576px) {
     .quicksignage-landing .hero-title {
-        font-size: 2rem;
+        font-size: 1.9rem;
+        line-height: 1.2;
+    }
+    
+    .quicksignage-landing .section-title {
+        font-size: 1.5rem;
+        line-height: 1.3;
+    }
+    
+    .quicksignage-landing .hero-subtitle {
+        font-size: 1rem;
     }
     
     .quicksignage-landing .stat-number {
@@ -1040,6 +1133,7 @@
     .quicksignage-landing .trust-item {
         flex-direction: column;
         text-align: center;
+        margin-bottom: 1.5rem;
     }
     
     .quicksignage-landing .trust-item i {
@@ -1049,6 +1143,10 @@
     
     .quicksignage-landing .hero-form-card {
         padding: 1rem;
+    }
+    
+    .quicksignage-landing .form-header h3 {
+        font-size: 1.1rem;
     }
     
     .quicksignage-landing .modal-body {
@@ -1083,6 +1181,77 @@
     .quicksignage-landing .guarantee-icon {
         margin-right: 0;
         margin-bottom: 0.75rem;
+    }
+    
+    .quicksignage-landing .sign-image {
+        height: 160px;
+    }
+    
+    .quicksignage-landing .step-card,
+    .quicksignage-landing .benefit-card {
+        padding: 1.5rem;
+    }
+    
+    .quicksignage-landing .step-icon,
+    .quicksignage-landing .benefit-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.25rem;
+    }
+    
+    .quicksignage-landing .step-number {
+        width: 30px;
+        height: 30px;
+        font-size: 1rem;
+        top: -10px;
+    }
+    
+    .quicksignage-landing .cta-title {
+        font-size: 1.75rem;
+    }
+    
+    .quicksignage-landing .cta-subtitle {
+        font-size: 1rem;
+    }
+    
+    .quicksignage-landing .btn-cta {
+        font-size: 1rem;
+        padding: 0.875rem 2rem;
+    }
+    
+    .quicksignage-landing .portfolio-grid {
+        gap: 1rem;
+    }
+    
+    .quicksignage-landing .portfolio-item {
+        height: 200px;
+    }
+}
+
+@media (max-width: 400px) {
+    .quicksignage-landing .hero-title {
+        font-size: 1.7rem;
+    }
+    
+    .quicksignage-landing .section-title {
+        font-size: 1.4rem;
+    }
+    
+    .quicksignage-landing .hero-form-card {
+        padding: 0.75rem;
+    }
+    
+    .quicksignage-landing .step-card,
+    .quicksignage-landing .benefit-card {
+        padding: 1rem;
+    }
+    
+    .quicksignage-landing .sign-image {
+        height: 140px;
+    }
+    
+    .quicksignage-landing .portfolio-item {
+        height: 180px;
     }
 }
 
