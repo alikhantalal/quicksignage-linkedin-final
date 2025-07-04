@@ -15,17 +15,10 @@
 }
 
 .quicksignage-landing * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
-.quicksignage-landing html {
-    scroll-behavior: smooth;
-    scroll-padding-top: var(--navbar-height);
-}
-
-.quicksignage-landing body {
+.quicksignage-landing {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     line-height: 1.6;
     color: var(--dark-color);
@@ -312,7 +305,7 @@
     display: flex;
     align-items: center;
     padding-top: var(--navbar-height);
-    margin-bottom: 0; /* Remove any bottom margin */
+    margin-bottom: 0;
 }
 
 .quicksignage-landing .hero-overlay {
@@ -485,7 +478,7 @@
 .quicksignage-landing .value-prop-section {
     padding: 5rem 0;
     background: var(--light-color);
-    margin-top: 0; /* Remove any top margin */
+    margin-top: 0;
 }
 
 .quicksignage-landing .step-card {
@@ -704,6 +697,8 @@
 /* Testimonials Section */
 .quicksignage-landing .testimonials-section {
     position: relative;
+    padding: 5rem 0;
+    background: var(--light-color);
 }
 
 .quicksignage-landing .testimonial-card {
@@ -1120,10 +1115,6 @@
         animation-duration: 0.01ms !important;
         animation-iteration-count: 1 !important;
         transition-duration: 0.01ms !important;
-    }
-    
-    .quicksignage-landing html {
-        scroll-behavior: auto;
     }
 }
 
