@@ -22,7 +22,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="/public/quicksignage-white-green-transparent_220x.png" alt="QuickSignage" height="45">
+                <img src="quicksignage-white-green-transparent_220x.png" alt="QuickSignage" height="45">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -66,40 +66,25 @@
                         <!-- Form Section -->
                         <div class="col-lg-7">
                             <form id="modalQuoteForm" class="quote-form">
-                                <div class="row">
-                                    <div class="col-md-6 mb-3">
-                                        <label class="form-label">Full Name *</label>
-                                        <input type="text" class="form-control" name="name" required>
-                                    </div>
-                                    <div class="col-md-6 mb-3">
-                                        <label class="form-label">Business Email *</label>
-                                        <input type="email" class="form-control" name="email" required>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6 mb-3">
-                                        <label class="form-label">Company Name *</label>
-                                        <input type="text" class="form-control" name="company" required>
-                                    </div>
-                                    <div class="col-md-6 mb-3">
-                                        <label class="form-label">Phone Number</label>
-                                        <input type="tel" class="form-control" name="phone">
-                                    </div>
-                                </div>
-                                <div class="mb-3">
-                                    <label class="form-label">Sign Type *</label>
-                                    <select class="form-select" name="signType" required>
-                                        <option value="">Select Sign Type</option>
-                                        <option value="3D Blade Sign">3D Blade Sign</option>
-                                        <option value="Acrylic Front-lit">Acrylic Front-lit</option>
-                                        <option value="3D Metal Back-lit">3D Metal Back-lit</option>
-                                        <option value="Channel Letter">Channel Letter</option>
-                                        <option value="3D Signage">3D Signage</option>
-                                        <option value="Lightbox">Lightbox</option>
-                                        <option value="Custom">Custom Design</option>
-                                    </select>
-                                </div>
-                                <div class="mb-3">
+    <div class="row">
+        <div class="col-md-6 mb-3">
+            <label class="form-label">Full Name *</label>
+            <input type="text" class="form-control" name="name" required>
+        </div>
+        <div class="col-md-6 mb-3">
+            <label class="form-label">Business Email *</label>
+            <input type="email" class="form-control" name="email" required>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 mb-3">
+            <label class="form-label">Phone Number</label>
+            <input type="tel" class="form-control" name="phone">
+        </div>
+        <div class="col-md-6 mb-3">
+            <!-- This column is now empty, you can add another field or remove the row structure -->
+        </div>
+    </div>    <div class="mb-3">
                                     <label class="form-label">Where do you want to place your sign? *</label>
                                     <textarea class="form-control" name="placement" rows="3" placeholder="For a quick turnaround, please share budget, size dimensions and any other design/sign specifications you have in your mind" required></textarea>
                                 </div>
@@ -260,36 +245,18 @@
                                 <p>See exactly how your sign will look before you buy</p>
                             </div>
                             <form id="heroQuoteForm" class="hero-quote-form">
-                                <div class="mb-3">
-                                    <label class="form-label">Full Name *</label>
-                                    <input type="text" class="form-control" name="name" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label class="form-label">Business Email *</label>
-                                    <input type="email" class="form-control" name="email" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label class="form-label">Company Name *</label>
-                                    <input type="text" class="form-control" name="company" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label class="form-label">Phone Number</label>
-                                    <input type="tel" class="form-control" name="phone">
-                                </div>
-                                <div class="mb-3">
-                                    <label class="form-label">Sign Type *</label>
-                                    <select class="form-select" name="signType" required>
-                                        <option value="">Select Sign Type</option>
-                                        <option value="3D Blade Sign">3D Blade Sign</option>
-                                        <option value="Acrylic Front-lit">Acrylic Front-lit</option>
-                                        <option value="3D Metal Back-lit">3D Metal Back-lit</option>
-                                        <option value="Channel Letter">Channel Letter</option>
-                                        <option value="3D Signage">3D Signage</option>
-                                        <option value="Lightbox">Lightbox</option>
-                                        <option value="Custom">Custom Design</option>
-                                    </select>
-                                </div>
-                                <div class="mb-3">
+    <div class="mb-3">
+        <label class="form-label">Full Name *</label>
+        <input type="text" class="form-control" name="name" required>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Business Email *</label>
+        <input type="email" class="form-control" name="email" required>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Phone Number</label>
+        <input type="tel" class="form-control" name="phone">
+    </div>    <div class="mb-3">
                                     <label class="form-label">Where do you want to place your sign? *</label>
                                     <textarea class="form-control" name="placement" rows="3" placeholder="For a quick turnaround, please share budget, size dimensions and any other design/sign specifications you have in your mind" required></textarea>
                                 </div>
@@ -481,58 +448,242 @@
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center mb-5">
-                    <h2 class="section-title">Successful Businesses Trust QuickSignage</h2>
-                    <p class="section-subtitle">See how we've helped businesses like yours stand out and attract more customers</p>
+       <!-- Customer Testimonials Section -->
+<section class="testimonials-section" style="padding: 5rem 0; background: var(--light-color);">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h2 class="section-title">Trusted by Successful Businesses</h2>
+                <div class="rating-summary mb-3">
+                    <div class="stars-large" style="font-size: 2rem; color: #ffd700; margin-bottom: 0.5rem;">
+                        ★★★★★
+                    </div>
+                    <p class="section-subtitle">5.0 rating from 137 verified customer reviews</p>
                 </div>
             </div>
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <img src="https://cdn.shopify.com/s/files/1/0699/3553/0271/files/3d_blade_sign.jpg?v=1711105522" alt="Restaurant Signage" loading="lazy">
-                    <div class="portfolio-overlay">
-                        <h5>Restaurant Chain</h5>
-                        <p>3D Channel Letters</p>
+        </div>
+        
+        <div class="row g-4">
+            <!-- Testimonial 1 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="testimonial-card">
+                    <div class="testimonial-image">
+                        <img src="https://images.loox.io/uploads/2025/6/19/1i38uo-l_.jpg" alt="Janelle E. Custom Sign" loading="lazy">
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="stars">★★★★★</div>
+                        <h5>Janelle E. <span class="verified">✓ Verified</span></h5>
+                        <p>"Not fully installed, but a beautiful sign, very happy!"</p>
+                        <small class="date">6/19/2025</small>
+                        <div class="product-mention">CUSTOM MOCKUP SIGN</div>
                     </div>
                 </div>
-                <div class="portfolio-item">
-                    <img src="https://cdn.shopify.com/s/files/1/0699/3553/0271/files/Popped.jpg?v=1711105521" alt="Medical Office" loading="lazy">
-                    <div class="portfolio-overlay">
-                        <h5>Medical Practice</h5>
-                        <p>Acrylic Front-lit Sign</p>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="testimonial-card">
+                    <div class="testimonial-image">
+                        <img src="https://images.loox.io/uploads/2025/5/20/eA4Y4R0Kea.jpg" alt="Grace F. Metal Sign" loading="lazy">
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="stars">★★★★★</div>
+                        <h5>Grace F. <span class="verified">✓ Verified</span></h5>
+                        <p>"Love the weight and love the finish of this sign. Feels solid, and it looks premium. Thank you so much"</p>
+                        <small class="date">5/20/2025</small>
+                        <div class="product-mention">Metal Sign</div>
                     </div>
                 </div>
-                <div class="portfolio-item">
-                    <img src="https://cdn.shopify.com/s/files/1/0598/7391/9062/files/Lightbox.webp?v=1721972968" alt="Retail Store" loading="lazy">
-                    <div class="portfolio-overlay">
-                        <h5>Retail Store</h5>
-                        <p>LED Lightbox</p>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="testimonial-card">
+                    <div class="testimonial-image">
+                        <img src="https://images.loox.io/uploads/2025/5/20/lcnugEHlE.jpg" alt="Noah B. Custom Backlit Sign" loading="lazy">
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="stars">★★★★★</div>
+                        <h5>Noah B. <span class="verified">✓ Verified</span></h5>
+                        <p>"Our backlit sign turned out better than expected. Great sign, and we have already had customers mention how much they like it."</p>
+                        <small class="date">5/18/2025</small>
+                        <div class="product-mention">Custom Backlit Sign</div>
                     </div>
                 </div>
-                <div class="portfolio-item">
-                    <img src="https://cdn.shopify.com/s/files/1/0699/3553/0271/files/AXdD.jpg?v=1711105521" alt="Corporate Office" loading="lazy">
-                    <div class="portfolio-overlay">
-                        <h5>Corporate Office</h5>
-                        <p>Metal Back-lit Letters</p>
+            </div>
+
+            <!-- Testimonial 4 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="testimonial-card">
+                    <div class="testimonial-image">
+                        <img src="https://images.loox.io/uploads/2025/5/20/zLYn7hyPZE.jpg" alt="Chloe M. Light Box Sign" loading="lazy">
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="stars">★★★★★</div>
+                        <h5>Chloe M. <span class="verified">✓ Verified</span></h5>
+                        <p>"Such a nice touch to our new branding. It lights up evenly and looks sharp both close up and from a distance. Easy setup, bright without being too flashy."</p>
+                        <small class="date">5/18/2025</small>
+                        <div class="product-mention">Light Box Sign</div>
                     </div>
                 </div>
-                <div class="portfolio-item">
-                    <img src="https://cdn.shopify.com/s/files/1/0699/3553/0271/files/3d_blade_sign.jpg?v=1711105522" alt="Salon" loading="lazy">
-                    <div class="portfolio-overlay">
-                        <h5>Beauty Salon</h5>
-                        <p>3D Blade Sign</p>
+            </div>
+
+            <!-- Testimonial 5 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="testimonial-card">
+                    <div class="testimonial-image">
+                        <img src="https://images.loox.io/uploads/2025/5/20/1l4-r94bBa.jpg" alt="Benjamin R. Custom Acrylic Sign" loading="lazy">
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="stars">★★★★★</div>
+                        <h5>Benjamin R. <span class="verified">✓ Verified</span></h5>
+                        <p>"The sign looks way more expensive than it is. Super happy with the quality and how easy it was to install."</p>
+                        <small class="date">5/16/2025</small>
+                        <div class="product-mention">Custom Acrylic Sign</div>
                     </div>
                 </div>
-                <div class="portfolio-item">
-                    <img src="https://cdn.shopify.com/s/files/1/0598/7391/9062/files/Storefront_Signage.webp?v=1721972968" alt="Law Firm" loading="lazy">
-                    <div class="portfolio-overlay">
-                        <h5>Law Firm</h5>
-                        <p>Premium 3D Signage</p>
+            </div>
+
+            <!-- Testimonial 6 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="testimonial-card">
+                    <div class="testimonial-image">
+                        <img src="https://images.loox.io/uploads/2025/5/20/ZdIz7Jhhy.jpg" alt="Sophie H. Custom Blade Sign" loading="lazy">
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="stars">★★★★★</div>
+                        <h5>Sophie H. <span class="verified">✓ Verified</span></h5>
+                        <p>"Love the visibility this sign gives us. It sticks out just enough from the building to catch attention without looking bulky."</p>
+                        <small class="date">5/10/2025</small>
+                        <div class="product-mention">Custom Blade Sign</div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div class="text-center mt-5">
+            <button class="btn btn-primary btn-lg" onclick="scrollToHeroForm()">
+    <i class="fas fa-rocket me-2"></i>Join Our Happy Customers - Get Your Free Quote
+</button>
+        </div>
+    </div>
+</section>
+
+<style>
+.testimonials-section {
+    position: relative;
+}
+
+.testimonial-card {
+    background: var(--white);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+    height: 100%;
+    border: 1px solid var(--border-color);
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.testimonial-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.testimonial-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover .testimonial-image img {
+    transform: scale(1.05);
+}
+
+.testimonial-content {
+    padding: 1.5rem;
+}
+
+.testimonial-content .stars {
+    color: #ffd700;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.testimonial-content h5 {
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--dark-color);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.verified {
+    background: var(--primary-color);
+    color: white;
+    padding: 0.2rem 0.5rem;
+    border-radius: 12px;
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+
+.testimonial-content p {
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.date {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.product-mention {
+    background: rgba(0, 184, 148, 0.1);
+    color: var(--primary-color);
+    padding: 0.4rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.rating-summary {
+    margin-bottom: 2rem;
+}
+
+.stars-large {
+    text-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .testimonial-image {
+        height: 150px;
+    }
+    
+    .testimonial-content {
+        padding: 1rem;
+    }
+    
+    .testimonial-content h5 {
+        font-size: 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.3rem;
+    }
+}
+</style>
     </section>
 
     <!-- Why Choose Us Section -->
@@ -607,14 +758,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 mb-4">
-                    <img src="/public/quicksignage-white-green-transparent_220x.png" alt="QuickSignage" height="45" class="mb-3">
+                <img src="quicksignage-white-green-transparent_220x.png" alt="QuickSignage" height="45" class="mb-3">
                     <p class="footer-text">Creating premium custom business signs that help professional businesses stand out and attract more customers worldwide.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                    </div>
+                   <div class="social-links">
+    <a href="https://www.linkedin.com/company/quicksignage/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+    <a href="https://www.facebook.com/people/Quick-Signage/61564359419791/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.instagram.com/quicksignage_/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+    <a href="https://x.com/quicksignage_" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+</div>
                 </div>
                 <div class="col-lg-2 col-md-6 mb-4">
                     <h6 class="footer-title">Sign Types</h6>
